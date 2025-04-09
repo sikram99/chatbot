@@ -34,7 +34,7 @@ This Python module helps find the **closest available EV charging station** base
    To include those, or for using your own API key you can add one or all of these options:
 
    ```python
-   result = find_station(USER_LOCATION, TOMTOM_API_KEY="your_api_key", INCLUDE_NAVIGATION=True, RETURN_FULL_JSON=False)
+   result = find_station(USER_LOCATION, TOMTOM_API_KEY="your_api_key", INCLUDE_NAVIGATION=True, RETURN_FULL_JSON=True)
    ```
 
 4. **What it returns**:
