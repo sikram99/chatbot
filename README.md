@@ -1,6 +1,16 @@
 # EV Charging Station Finder – Backend Module 🔌
 
 This Python module helps find the **closest available EV charging station** based on the user’s current location using **TomTom APIs**.
+and returns the
+
+- Location
+- Address
+- Distance
+- ETA
+- Navigation Details
+
+For the charging station
+Optionally it can also return the raw data received which can be used for further processing
 
 ---
 
