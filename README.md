@@ -22,15 +22,22 @@ This Python module helps find the **closest available EV charging station** base
    ```
 
 2. **Call the function**:  
-   In your Python script, call:
+   In your Python script, simply call:
 
    ```python
    from find_station import find_station
 
-   result = find_station(USER_LOCATION, INCLUDE_NAVIGATION=True, RETURN_FULL_JSON=False)
+   result = find_station(USER_LOCATION)
    ```
 
-3. **What it returns**:
+   By default it does not return Navigation Instrcutions and Raw JSON
+   To include those, or for using your own API key you can add one or all of these options:
+
+   ```python
+   result = find_station(USER_LOCATION, TOMTOM_API_KEY="your_api_key", INCLUDE_NAVIGATION=True, RETURN_FULL_JSON=False)
+   ```
+
+4. **What it returns**:
    ```python
    {
        "Name": "Station Name",
@@ -42,7 +49,7 @@ This Python module helps find the **closest available EV charging station** base
    }
    ```
 
-4. **Full route JSON** (optional):  
+5. **Full route JSON** (optional):  
    Set `RETURN_FULL_JSON=True` if the frontend needs raw routing data.
 
 ---
