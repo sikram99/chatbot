@@ -6,9 +6,9 @@ This Python module helps find the **closest available EV charging station** base
 
 ## What This Does
 
-- Finds **nearby charging stations** (using coordinates).
-- Checks **real-time availability** of chargers.
-- Calculates **distance** and **ETA**.
+- Finds **nearby charging stations** using TOMTOMs Search API
+- Checks **real-time availability** of chargers using TOMTOMs Charging Stations Avalaility API
+- Calculates **distance** and **ETA**. using TOMTOMs Routing API (which takes into account Real Time Traffic as well)
 - (Optional) Returns **turn-by-turn instructions** and **full routing data** for frontend use.
 
 ---
